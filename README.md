@@ -10,7 +10,7 @@ This project demonstrates how to set up and use Kafka in a Spring Boot applicati
 - Maven or Gradle
 
 ## Running Kafka Locally
-To run Kafka on your local machine, follow these steps:
+To run Kafka on your local windows machine, follow these steps:
 
 1. **Start Zookeeper** (required for Kafka to work):
    ```sh
@@ -19,12 +19,12 @@ To run Kafka on your local machine, follow these steps:
 
 2. **Start Kafka Server**:
    ```sh
-   kafka-server-start.bat ..\..\config\server.properties
+   bin\windows\kafka-server-start.bat ..\..\config\server.properties
    ```
 
 3. **Consume Messages from a Topic**:
    ```sh
-   kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic my-topic --from-beginning
+   bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic my-topic --from-beginning
    ```
 
 ## Project Configuration
